@@ -1,0 +1,8 @@
+<div class="weather-form">
+    <%= form_tag forecast_path, method: :post, data: { turbo: false } do  %>
+        <%= text_field_tag :zip_code, nil, placeholder: 'Enter a Zip Code' %>
+        <%= text_field_tag :country, nil, placeholder: 'Enter a Country Code' %>
+        <%= submit_tag 'Submit' %>
+    <% end %>
+</div>
+

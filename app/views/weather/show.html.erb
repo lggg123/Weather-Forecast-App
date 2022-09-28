@@ -1,0 +1,15 @@
+<div>
+    <% if @cached_data == true %>
+    <h2>The data is coming from cache!</h2>
+    <% else %>
+    <h2>The data is coming from database!</h2>
+    <% end %>
+    <h3>Current Temperature: </h3>
+    <%= @forecast.current_temp %>&deg;F
+    <h3>Low: </h3>
+    <%= @forecast.min_temp %>&deg;F
+    <h3>High: </h3>
+    <%= @forecast.max_temp %>&deg;F
+    <h3>Extended Weather Condition: </h3>
+    <%= @forecast.weather_condition %>
+</div>
